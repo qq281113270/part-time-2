@@ -133,7 +133,13 @@ input[type='checkbox']:active:focus{
     width: 100%;
     height: auto;
     margin: 0 auto;
+    
 }
+
+.center-w{
+   width: 1280px;
+}
+
 
 .content {
     /* box-sizing: border-box; */
@@ -209,17 +215,18 @@ input[type='checkbox']:active:focus{
 
 .hader-keyword ul{
         height: 55px;
-        padding: 10px 0;
+        padding: 0px 0;
         box-sizing: border-box;
         width: 100%;
 }
 
 .hader-keyword li{
      border: 1px solid #ccc;
-     float: left;
+      display: inline-block;
      color: #333;
-     padding: 6px 10px;
-     border-radius:15px ;
+     padding: 8px 20px;
+     margin: 6px;
+     border-radius:20px ;
      font-size: 14px;
      margin-right: 15px;
      /* background: red; */
@@ -440,8 +447,8 @@ input[type='checkbox']:active:focus{
     }
 
     .hader-keyword ul{
-        height: 55px;
-        padding: 10px 6px;
+        height: auto;
+        padding: 10px 6px 0px 6px;
         box-sizing: border-box;
         width: 100%;
     }

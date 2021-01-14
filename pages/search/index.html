@@ -1,73 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./../../css/common/bootstrap.css"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./../../css/common/base.css"
+        />
+        <link rel="stylesheet" type="text/css" href="./index.css" />
+        <script src="./../../js/common/jquery.min.js"></script>
+        <script src="./../../js/common/bootstrap.js"></script>
+        <script src="./../../js/common/rem.js"></script>
+    </head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="./../../css/common/bootstrap.css" />
-    <link rel="stylesheet" type="text/css" href="./../../css/common/base.css" />
-    <link rel="stylesheet" type="text/css" href="./index.css" />
-    <script src="./../../js/common/jquery.min.js"></script>
-    <script src="./../../js/common/bootstrap.js"></script>
-    <script src="./../../js/common/rem.js"></script>
-</head>
+    <body>
+        <div class="full-screen nav">
+            <nav
+                class="navbar navbar-default center center-w"
+                role="navigation"
+            >
+                <div class="navbar-header">
+                    <button
+                        type="button"
+                        class="navbar-toggle"
+                        data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1"
+                    >
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- <button class="icon close">Close</button> -->
 
-<body>
-    <div class="full-screen nav">
-        <nav class="navbar navbar-default center" role="navigation">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <!-- <button class="icon close">Close</button> -->
+                    <div class="navbar-brand logo">
+                        <img src="./../../image/logo.gif" />
+                    </div>
 
-                <div class="navbar-brand logo">
-                    <img src="./../../image/logo.gif" />
-                </div>
-
-
-                <div class="navbar-brand">
-                    <div class="log-in">
-                        <ul>
-                            <li>
-                                <img src="./../../image/user.png" />
-                            </li>
-                            <li class="odd">
-                                登录
-                            </li>
-                            <li>|</li>
-                            <li class="odd">注册</li>
-                        </ul>
+                    <div class="navbar-brand">
+                        <div class="log-in">
+                            <ul>
+                                <li>
+                                    <img src="./../../image/user.png" />
+                                </li>
+                                <li class="odd">登录</li>
+                                <li>|</li>
+                                <li class="odd">注册</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
+                <div
+                    class="collapse navbar-collapse"
+                    id="bs-example-navbar-collapse-1"
+                >
+                    <!--嵌套下拉菜单-->
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="#"> 首页 </a>
+                        </li>
+                        <li><a href="#">我的意向单</a></li>
+                        <li class="active"><a href="#">我的收藏</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="center hader-keyword center-w">
+            <ul>
+                <li>查资源</li>
+                <li>查行业</li>
+                <li>查热销</li>
+                <li>查点击率</li>
+                <li>查点规格</li>
+            </ul>
+        </div>
 
-            </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <!--嵌套下拉菜单-->
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="#">
-                            首页
-                        </a></li>
-                    <li><a href="#">我的意向单</a></li>
-                    <li class="active"><a href="#">我的收藏</a></li>
-
-
-                </ul>
-
-
-            </div>
-        </nav>
-    </div>
-
-
-
-    <div class="full-screen top">
+        <!-- <div class="full-screen top">
         <div class="center search">
             <div class="left-box">
                 <div class="form-group address">
@@ -93,7 +108,7 @@
                 <button type="button" class="btn button">
                     <img src="../../image/search.png" />
                 </button>
-                <!-- <div class="medium">
+                 <div class="medium">
                     媒介
                     <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-down" fill="currentColor"
                         xmlns="http://www.w3.org/2000/svg">
@@ -108,7 +123,7 @@
                         <path fill-rule="evenodd"
                             d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
                     </svg>
-                </div> -->
+                </div> 
             </div>
             <div class="right-box">
                 <div class="qr-code">
@@ -117,24 +132,18 @@
                 <div class="scan">
                     扫描二维码下载APP
                 </div>
-                <!-- <div class="list">
-                    <img src="../../image/list.png" />
-                </div> -->
-                <!-- <div class="list-text">
-                    列表
-                </div> -->
-                <div class="collect">
+       
+                <div class="cart">
                     <img src="../../image/Group 12 Copy.png" />
                 </div>
-                <div class="collect-text">
+                <div class="cart-text">
                     按地图
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
-
-    <div class="popular-elected center">
+        <!-- <div class="popular-elected center">
         <h3>
             热门推选
         </h3>
@@ -183,8 +192,8 @@
 
 
         </ul>
-    </div>
-    <div class="search-option center">
+    </div> -->
+        <!-- <div class="search-option center">
         <ul>
             <li>
                 <dl>
@@ -293,343 +302,760 @@
             </li>
 
         </ul>
+    </div> -->
 
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-    <div class="center list-box">
-        <h2>
-            共收藏12个罗湖区媒体资源广告
-        </h2>
-        <div class="map ">
-
-            <!-- <div class="left-box">
+        <div class="center list-box center-w">
+            <h2>广东省媒体资源</h2>
+            <div class="map">
+                <!-- <div class="left-box">
                 <img src="./../../image/map.png" />
             </div> -->
-            <!-- <div class="right-box"> -->
-            <dl>
-                <dt>
-                    <div class="left-box">
+                <!-- <div class="right-box"> -->
+                <dl>
+                    <!-- <dt>
+                        <div class="left-box">
+                            <div class="form-check">
+                                <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    value=""
+                                    id="defaultCheck1"
+                                />
+                            </div>
+                            <ul>
+                                <li class="active">综合排序</li>
+                                <li>价格</li>
+                            </ul>
+                        </div>
+                        <div class="right-box">
+                            <div class="put-in">我要投放</div>
+                        </div>
+                    </dt> -->
 
+                    <dd>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+                            <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="defaultCheck1"
+                            />
                         </div>
-                        <ul>
-                            <li class="active">综合排序</li>
-                            <li>价格</li>
-                        </ul>
-
-
-                    </div>
-                    <div class="right-box">
-                        <div class="put-in">
-                            我要投放
+                        <div class="advertising">
+                            <div class="title">深圳市南山区媒体资源</div>
+                            <img src="./../../image/ad.png" />
                         </div>
-                    </div>
-                </dt>
-
-                <dd>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                    </div>
-                    <div class="advertising">
-                        <img src="./../../image/ad.png" />
-                    </div>
-                    <div class="info">
-                        <div class="title">
+                        <div class="info">
+                            <!-- <div class="cart">
+                            <img src="./../../image/cart.png" />
+                        </div> -->
+                            <!-- <div class="title">
                             罗湖深南大道广告
-                        </div>
-                        <div class="collect">
-                            <img src="./../../image/collect.png" />
-                        </div>
-                        <div class="occupation">
-
-                            <dl class="nth-child">
-                                <dt>资源名称 : </dt>
-                                <dd>北京市地王厦停车场车门显示屏</dd>
-                            </dl>
-                            <dl>
-                                <dt>详细地址 : </dt>
-                                <dd>北京市朝阳东路地王大厦停车场东门大街32-93号</dd>
-                            </dl>
-                            <dl>
-                                <dt>载体 : </dt>
-                                <dd> LED屏</dd>
-                            </dl>
-                            <dl>
-                                <dt>商圈 : </dt>
-                                <dd>东门购物广场</dd>
-                            </dl>
-                            <dl>
-                                <dt>地段 : </dt>
-                                <dd> 办公区、居民区</dd>
-                            </dl>
-
-                        </div>
-                        <div class="price-box">
+                        </div> -->
+                            <div class="cart">
+                                <img src="./../../image/cart.png" />
+                            </div>
+                            <div class="occupation">
+                                <dl class="retain">
+                                    <dt>媒体容量 :</dt>
+                                    <dd>29990LED屏</dd>
+                                </dl>
+                                <dl>
+                                    <dt>刊例价格 :</dt>
+                                    <dd>东门购物广场</dd>
+                                </dl>
+                                <dl>
+                                    <dt>定金金额 :</dt>
+                                    <dd>办公区、居民区</dd>
+                                </dl>
+                                <dl>
+                                    <dt>可投放广告数量 :</dt>
+                                    <dd>白领、居民</dd>
+                                </dl>
+                                <dl>
+                                    <dt>规格尺寸 :</dt>
+                                    <dd>50000/平</dd>
+                                </dl>
+                                <dl class="retain">
+                                    <dt>所属地区 :</dt>
+                                    <dd>福田区</dd>
+                                </dl>
+                                <dl class="nth-child">
+                                    <dt>具体地址 :</dt>
+                                    <dd>
+                                        北京市朝阳东路地王大厦停车场东门大街32-93号
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="occupation occupation-right">
+                                <dl>
+                                    <dt>商圈信息 :</dt>
+                                    <dd>人流量大，白领居民多</dd>
+                                </dl>
+                                <dl>
+                                    <dt>人群 :</dt>
+                                    <dd>地王大厦、绿源小区</dd>
+                                </dl>
+                                <dl>
+                                    <dt>房价 :</dt>
+                                    <dd>250000</dd>
+                                </dl>
+                                <dl>
+                                    <dt>人流量 :</dt>
+                                    <dd>5990人</dd>
+                                </dl>
+                                <dl>
+                                    <dt>最低投放时长 :</dt>
+                                    <dd>3小时</dd>
+                                </dl>
+                                <dl>
+                                    <dt>限制行业客户 :</dt>
+                                    <dd>广告行业</dd>
+                                </dl>
+                            </div>
+                            <!-- <div class="price-box">
                             <span class="price">2000/</span>
                             <span>天</span>
+                        </div> -->
                         </div>
-                    </div>
-                </dd>
-                <dd>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                    </div>
-                    <div class="advertising">
-                        <img src="./../../image/ad.png" />
-                    </div>
-                    <div class="info">
-                        <div class="title">
+                    </dd>
+
+                    <dd>
+                        <div class="form-check">
+                            <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="defaultCheck1"
+                            />
+                        </div>
+                        <div class="advertising">
+                            <div class="title">深圳市南山区媒体资源</div>
+                            <img src="./../../image/ad.png" />
+                        </div>
+                        <div class="info">
+                            <!-- <div class="cart">
+                            <img src="./../../image/cart.png" />
+                        </div> -->
+                            <!-- <div class="title">
                             罗湖深南大道广告
-                        </div>
-                        <div class="collect">
-                            <img src="./../../image/collect.png" />
-                        </div>
-                        <div class="occupation">
-
-                            <dl class="nth-child">
-                                <dt>资源名称 : </dt>
-                                <dd>北京市地王厦停车场车门显示屏</dd>
-                            </dl>
-                            <dl>
-                                <dt>详细地址 : </dt>
-                                <dd>北京市朝阳东路地王大厦停车场东门大街32-93号</dd>
-                            </dl>
-                            <dl>
-                                <dt>载体 : </dt>
-                                <dd> LED屏</dd>
-                            </dl>
-                            <dl>
-                                <dt>商圈 : </dt>
-                                <dd>东门购物广场</dd>
-                            </dl>
-                            <dl>
-                                <dt>地段 : </dt>
-                                <dd> 办公区、居民区</dd>
-                            </dl>
-
-                        </div>
-                        <div class="price-box">
+                        </div> -->
+                            <div class="cart">
+                                <img src="./../../image/cart.png" />
+                            </div>
+                            <div class="occupation">
+                                <dl class="retain">
+                                    <dt>媒体容量 :</dt>
+                                    <dd>29990LED屏</dd>
+                                </dl>
+                                <dl>
+                                    <dt>刊例价格 :</dt>
+                                    <dd>东门购物广场</dd>
+                                </dl>
+                                <dl>
+                                    <dt>定金金额 :</dt>
+                                    <dd>办公区、居民区</dd>
+                                </dl>
+                                <dl>
+                                    <dt>可投放广告数量 :</dt>
+                                    <dd>白领、居民</dd>
+                                </dl>
+                                <dl>
+                                    <dt>规格尺寸 :</dt>
+                                    <dd>50000/平</dd>
+                                </dl>
+                                <dl class="retain">
+                                    <dt>所属地区 :</dt>
+                                    <dd>福田区</dd>
+                                </dl>
+                                <dl class="nth-child">
+                                    <dt>具体地址 :</dt>
+                                    <dd>
+                                        北京市朝阳东路地王大厦停车场东门大街32-93号
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="occupation occupation-right">
+                                <dl>
+                                    <dt>商圈信息 :</dt>
+                                    <dd>人流量大，白领居民多</dd>
+                                </dl>
+                                <dl>
+                                    <dt>人群 :</dt>
+                                    <dd>地王大厦、绿源小区</dd>
+                                </dl>
+                                <dl>
+                                    <dt>房价 :</dt>
+                                    <dd>250000</dd>
+                                </dl>
+                                <dl>
+                                    <dt>人流量 :</dt>
+                                    <dd>5990人</dd>
+                                </dl>
+                                <dl>
+                                    <dt>最低投放时长 :</dt>
+                                    <dd>3小时</dd>
+                                </dl>
+                                <dl>
+                                    <dt>限制行业客户 :</dt>
+                                    <dd>广告行业</dd>
+                                </dl>
+                            </div>
+                            <!-- <div class="price-box">
                             <span class="price">2000/</span>
                             <span>天</span>
+                        </div> -->
                         </div>
-                    </div>
-                </dd>
-                <dd>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                    </div>
-                    <div class="advertising">
-                        <img src="./../../image/ad.png" />
-                    </div>
-                    <div class="info">
-                        <div class="title">
+                    </dd>
+
+                    <dd>
+                        <div class="form-check">
+                            <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="defaultCheck1"
+                            />
+                        </div>
+                        <div class="advertising">
+                            <div class="title">深圳市南山区媒体资源</div>
+                            <img src="./../../image/ad.png" />
+                        </div>
+                        <div class="info">
+                            <!-- <div class="cart">
+                            <img src="./../../image/cart.png" />
+                        </div> -->
+                            <!-- <div class="title">
                             罗湖深南大道广告
-                        </div>
-                        <div class="collect">
-                            <img src="./../../image/collect.png" />
-                        </div>
-                        <div class="occupation">
-
-                            <dl class="nth-child">
-                                <dt>资源名称 : </dt>
-                                <dd>北京市地王厦停车场车门显示屏</dd>
-                            </dl>
-                            <dl>
-                                <dt>详细地址 : </dt>
-                                <dd>北京市朝阳东路地王大厦停车场东门大街32-93号</dd>
-                            </dl>
-                            <dl>
-                                <dt>载体 : </dt>
-                                <dd> LED屏</dd>
-                            </dl>
-                            <dl>
-                                <dt>商圈 : </dt>
-                                <dd>东门购物广场</dd>
-                            </dl>
-                            <dl>
-                                <dt>地段 : </dt>
-                                <dd> 办公区、居民区</dd>
-                            </dl>
-
-                        </div>
-                        <div class="price-box">
+                        </div> -->
+                            <div class="cart">
+                                <img src="./../../image/cart.png" />
+                            </div>
+                            <div class="occupation">
+                                <dl class="retain">
+                                    <dt>媒体容量 :</dt>
+                                    <dd>29990LED屏</dd>
+                                </dl>
+                                <dl>
+                                    <dt>刊例价格 :</dt>
+                                    <dd>东门购物广场</dd>
+                                </dl>
+                                <dl>
+                                    <dt>定金金额 :</dt>
+                                    <dd>办公区、居民区</dd>
+                                </dl>
+                                <dl>
+                                    <dt>可投放广告数量 :</dt>
+                                    <dd>白领、居民</dd>
+                                </dl>
+                                <dl>
+                                    <dt>规格尺寸 :</dt>
+                                    <dd>50000/平</dd>
+                                </dl>
+                                <dl class="retain">
+                                    <dt>所属地区 :</dt>
+                                    <dd>福田区</dd>
+                                </dl>
+                                <dl class="nth-child">
+                                    <dt>具体地址 :</dt>
+                                    <dd>
+                                        北京市朝阳东路地王大厦停车场东门大街32-93号
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="occupation occupation-right">
+                                <dl>
+                                    <dt>商圈信息 :</dt>
+                                    <dd>人流量大，白领居民多</dd>
+                                </dl>
+                                <dl>
+                                    <dt>人群 :</dt>
+                                    <dd>地王大厦、绿源小区</dd>
+                                </dl>
+                                <dl>
+                                    <dt>房价 :</dt>
+                                    <dd>250000</dd>
+                                </dl>
+                                <dl>
+                                    <dt>人流量 :</dt>
+                                    <dd>5990人</dd>
+                                </dl>
+                                <dl>
+                                    <dt>最低投放时长 :</dt>
+                                    <dd>3小时</dd>
+                                </dl>
+                                <dl>
+                                    <dt>限制行业客户 :</dt>
+                                    <dd>广告行业</dd>
+                                </dl>
+                            </div>
+                            <!-- <div class="price-box">
                             <span class="price">2000/</span>
                             <span>天</span>
+                        </div> -->
                         </div>
-                    </div>
-                </dd>
-                <dd>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                    </div>
-                    <div class="advertising">
-                        <img src="./../../image/ad.png" />
-                    </div>
-                    <div class="info">
-                        <div class="title">
+                    </dd>
+                    <dd>
+                        <div class="form-check">
+                            <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="defaultCheck1"
+                            />
+                        </div>
+                        <div class="advertising">
+                            <div class="title">深圳市南山区媒体资源</div>
+                            <img src="./../../image/ad.png" />
+                        </div>
+                        <div class="info">
+                            <!-- <div class="cart">
+                            <img src="./../../image/cart.png" />
+                        </div> -->
+                            <!-- <div class="title">
                             罗湖深南大道广告
-                        </div>
-                        <div class="collect">
-                            <img src="./../../image/collect.png" />
-                        </div>
-                        <div class="occupation">
-
-                            <dl class="nth-child">
-                                <dt>资源名称 : </dt>
-                                <dd>北京市地王厦停车场车门显示屏</dd>
-                            </dl>
-                            <dl>
-                                <dt>详细地址 : </dt>
-                                <dd>北京市朝阳东路地王大厦停车场东门大街32-93号</dd>
-                            </dl>
-                            <dl>
-                                <dt>载体 : </dt>
-                                <dd> LED屏</dd>
-                            </dl>
-                            <dl>
-                                <dt>商圈 : </dt>
-                                <dd>东门购物广场</dd>
-                            </dl>
-                            <dl>
-                                <dt>地段 : </dt>
-                                <dd> 办公区、居民区</dd>
-                            </dl>
-
-                        </div>
-                        <div class="price-box">
+                        </div> -->
+                            <div class="cart">
+                                <img src="./../../image/cart.png" />
+                            </div>
+                            <div class="occupation">
+                                <dl class="retain">
+                                    <dt>媒体容量 :</dt>
+                                    <dd>29990LED屏</dd>
+                                </dl>
+                                <dl>
+                                    <dt>刊例价格 :</dt>
+                                    <dd>东门购物广场</dd>
+                                </dl>
+                                <dl>
+                                    <dt>定金金额 :</dt>
+                                    <dd>办公区、居民区</dd>
+                                </dl>
+                                <dl>
+                                    <dt>可投放广告数量 :</dt>
+                                    <dd>白领、居民</dd>
+                                </dl>
+                                <dl>
+                                    <dt>规格尺寸 :</dt>
+                                    <dd>50000/平</dd>
+                                </dl>
+                                <dl class="retain">
+                                    <dt>所属地区 :</dt>
+                                    <dd>福田区</dd>
+                                </dl>
+                                <dl class="nth-child">
+                                    <dt>具体地址 :</dt>
+                                    <dd>
+                                        北京市朝阳东路地王大厦停车场东门大街32-93号
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="occupation occupation-right">
+                                <dl>
+                                    <dt>商圈信息 :</dt>
+                                    <dd>人流量大，白领居民多</dd>
+                                </dl>
+                                <dl>
+                                    <dt>人群 :</dt>
+                                    <dd>地王大厦、绿源小区</dd>
+                                </dl>
+                                <dl>
+                                    <dt>房价 :</dt>
+                                    <dd>250000</dd>
+                                </dl>
+                                <dl>
+                                    <dt>人流量 :</dt>
+                                    <dd>5990人</dd>
+                                </dl>
+                                <dl>
+                                    <dt>最低投放时长 :</dt>
+                                    <dd>3小时</dd>
+                                </dl>
+                                <dl>
+                                    <dt>限制行业客户 :</dt>
+                                    <dd>广告行业</dd>
+                                </dl>
+                            </div>
+                            <!-- <div class="price-box">
                             <span class="price">2000/</span>
                             <span>天</span>
+                        </div> -->
                         </div>
-                    </div>
-                </dd>
-                <dd>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                    </div>
-                    <div class="advertising">
-                        <img src="./../../image/ad.png" />
-                    </div>
-                    <div class="info">
-                        <div class="title">
+                    </dd>
+
+                    <dd>
+                        <div class="form-check">
+                            <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="defaultCheck1"
+                            />
+                        </div>
+                        <div class="advertising">
+                            <div class="title">深圳市南山区媒体资源</div>
+                            <img src="./../../image/ad.png" />
+                        </div>
+                        <div class="info">
+                            <!-- <div class="cart">
+                            <img src="./../../image/cart.png" />
+                        </div> -->
+                            <!-- <div class="title">
                             罗湖深南大道广告
-                        </div>
-                        <div class="collect">
-                            <img src="./../../image/collect.png" />
-                        </div>
-                        <div class="occupation">
-
-                            <dl class="nth-child">
-                                <dt>资源名称 : </dt>
-                                <dd>北京市地王厦停车场车门显示屏</dd>
-                            </dl>
-                            <dl>
-                                <dt>详细地址 : </dt>
-                                <dd>北京市朝阳东路地王大厦停车场东门大街32-93号</dd>
-                            </dl>
-                            <dl>
-                                <dt>载体 : </dt>
-                                <dd> LED屏</dd>
-                            </dl>
-                            <dl>
-                                <dt>商圈 : </dt>
-                                <dd>东门购物广场</dd>
-                            </dl>
-                            <dl>
-                                <dt>地段 : </dt>
-                                <dd> 办公区、居民区</dd>
-                            </dl>
-
-                        </div>
-                        <div class="price-box">
+                        </div> -->
+                            <div class="cart">
+                                <img src="./../../image/cart.png" />
+                            </div>
+                            <div class="occupation">
+                                <dl class="retain">
+                                    <dt>媒体容量 :</dt>
+                                    <dd>29990LED屏</dd>
+                                </dl>
+                                <dl>
+                                    <dt>刊例价格 :</dt>
+                                    <dd>东门购物广场</dd>
+                                </dl>
+                                <dl>
+                                    <dt>定金金额 :</dt>
+                                    <dd>办公区、居民区</dd>
+                                </dl>
+                                <dl>
+                                    <dt>可投放广告数量 :</dt>
+                                    <dd>白领、居民</dd>
+                                </dl>
+                                <dl>
+                                    <dt>规格尺寸 :</dt>
+                                    <dd>50000/平</dd>
+                                </dl>
+                                <dl class="retain">
+                                    <dt>所属地区 :</dt>
+                                    <dd>福田区</dd>
+                                </dl>
+                                <dl class="nth-child">
+                                    <dt>具体地址 :</dt>
+                                    <dd>
+                                        北京市朝阳东路地王大厦停车场东门大街32-93号
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="occupation occupation-right">
+                                <dl>
+                                    <dt>商圈信息 :</dt>
+                                    <dd>人流量大，白领居民多</dd>
+                                </dl>
+                                <dl>
+                                    <dt>人群 :</dt>
+                                    <dd>地王大厦、绿源小区</dd>
+                                </dl>
+                                <dl>
+                                    <dt>房价 :</dt>
+                                    <dd>250000</dd>
+                                </dl>
+                                <dl>
+                                    <dt>人流量 :</dt>
+                                    <dd>5990人</dd>
+                                </dl>
+                                <dl>
+                                    <dt>最低投放时长 :</dt>
+                                    <dd>3小时</dd>
+                                </dl>
+                                <dl>
+                                    <dt>限制行业客户 :</dt>
+                                    <dd>广告行业</dd>
+                                </dl>
+                            </div>
+                            <!-- <div class="price-box">
                             <span class="price">2000/</span>
                             <span>天</span>
+                        </div> -->
                         </div>
-                    </div>
-                </dd>
-                <dd>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                    </div>
-                    <div class="advertising">
-                        <img src="./../../image/ad.png" />
-                    </div>
-                    <div class="info">
-                        <div class="title">
+                    </dd>
+
+                    <dd>
+                        <div class="form-check">
+                            <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="defaultCheck1"
+                            />
+                        </div>
+                        <div class="advertising">
+                            <div class="title">深圳市南山区媒体资源</div>
+                            <img src="./../../image/ad.png" />
+                        </div>
+                        <div class="info">
+                            <!-- <div class="cart">
+                            <img src="./../../image/cart.png" />
+                        </div> -->
+                            <!-- <div class="title">
                             罗湖深南大道广告
-                        </div>
-                        <div class="collect">
-                            <img src="./../../image/collect.png" />
-                        </div>
-                        <div class="occupation">
-
-                            <dl class="nth-child">
-                                <dt>资源名称 : </dt>
-                                <dd>北京市地王厦停车场车门显示屏</dd>
-                            </dl>
-                            <dl>
-                                <dt>详细地址 : </dt>
-                                <dd>北京市朝阳东路地王大厦停车场东门大街32-93号</dd>
-                            </dl>
-                            <dl>
-                                <dt>载体 : </dt>
-                                <dd> LED屏</dd>
-                            </dl>
-                            <dl>
-                                <dt>商圈 : </dt>
-                                <dd>东门购物广场</dd>
-                            </dl>
-                            <dl>
-                                <dt>地段 : </dt>
-                                <dd> 办公区、居民区</dd>
-                            </dl>
-
-                        </div>
-                        <div class="price-box">
+                        </div> -->
+                            <div class="cart">
+                                <img src="./../../image/cart.png" />
+                            </div>
+                            <div class="occupation">
+                                <dl class="retain">
+                                    <dt>媒体容量 :</dt>
+                                    <dd>29990LED屏</dd>
+                                </dl>
+                                <dl>
+                                    <dt>刊例价格 :</dt>
+                                    <dd>东门购物广场</dd>
+                                </dl>
+                                <dl>
+                                    <dt>定金金额 :</dt>
+                                    <dd>办公区、居民区</dd>
+                                </dl>
+                                <dl>
+                                    <dt>可投放广告数量 :</dt>
+                                    <dd>白领、居民</dd>
+                                </dl>
+                                <dl>
+                                    <dt>规格尺寸 :</dt>
+                                    <dd>50000/平</dd>
+                                </dl>
+                                <dl class="retain">
+                                    <dt>所属地区 :</dt>
+                                    <dd>福田区</dd>
+                                </dl>
+                                <dl class="nth-child">
+                                    <dt>具体地址 :</dt>
+                                    <dd>
+                                        北京市朝阳东路地王大厦停车场东门大街32-93号
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="occupation occupation-right">
+                                <dl>
+                                    <dt>商圈信息 :</dt>
+                                    <dd>人流量大，白领居民多</dd>
+                                </dl>
+                                <dl>
+                                    <dt>人群 :</dt>
+                                    <dd>地王大厦、绿源小区</dd>
+                                </dl>
+                                <dl>
+                                    <dt>房价 :</dt>
+                                    <dd>250000</dd>
+                                </dl>
+                                <dl>
+                                    <dt>人流量 :</dt>
+                                    <dd>5990人</dd>
+                                </dl>
+                                <dl>
+                                    <dt>最低投放时长 :</dt>
+                                    <dd>3小时</dd>
+                                </dl>
+                                <dl>
+                                    <dt>限制行业客户 :</dt>
+                                    <dd>广告行业</dd>
+                                </dl>
+                            </div>
+                            <!-- <div class="price-box">
                             <span class="price">2000/</span>
                             <span>天</span>
+                        </div> -->
                         </div>
-                    </div>
-                </dd>
+                    </dd>
 
-
-
-            </dl>
+                    <dd>
+                        <div class="form-check">
+                            <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="defaultCheck1"
+                            />
+                        </div>
+                        <div class="advertising">
+                            <div class="title">深圳市南山区媒体资源</div>
+                            <img src="./../../image/ad.png" />
+                        </div>
+                        <div class="info">
+                            <!-- <div class="cart">
+                            <img src="./../../image/cart.png" />
+                        </div> -->
+                            <!-- <div class="title">
+                            罗湖深南大道广告
+                        </div> -->
+                            <div class="cart">
+                                <img src="./../../image/cart.png" />
+                            </div>
+                            <div class="occupation">
+                                <dl class="retain">
+                                    <dt>媒体容量 :</dt>
+                                    <dd>29990LED屏</dd>
+                                </dl>
+                                <dl>
+                                    <dt>刊例价格 :</dt>
+                                    <dd>东门购物广场</dd>
+                                </dl>
+                                <dl>
+                                    <dt>定金金额 :</dt>
+                                    <dd>办公区、居民区</dd>
+                                </dl>
+                                <dl>
+                                    <dt>可投放广告数量 :</dt>
+                                    <dd>白领、居民</dd>
+                                </dl>
+                                <dl>
+                                    <dt>规格尺寸 :</dt>
+                                    <dd>50000/平</dd>
+                                </dl>
+                                <dl class="retain">
+                                    <dt>所属地区 :</dt>
+                                    <dd>福田区</dd>
+                                </dl>
+                                <dl class="nth-child">
+                                    <dt>具体地址 :</dt>
+                                    <dd>
+                                        北京市朝阳东路地王大厦停车场东门大街32-93号
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="occupation occupation-right">
+                                <dl>
+                                    <dt>商圈信息 :</dt>
+                                    <dd>人流量大，白领居民多</dd>
+                                </dl>
+                                <dl>
+                                    <dt>人群 :</dt>
+                                    <dd>地王大厦、绿源小区</dd>
+                                </dl>
+                                <dl>
+                                    <dt>房价 :</dt>
+                                    <dd>250000</dd>
+                                </dl>
+                                <dl>
+                                    <dt>人流量 :</dt>
+                                    <dd>5990人</dd>
+                                </dl>
+                                <dl>
+                                    <dt>最低投放时长 :</dt>
+                                    <dd>3小时</dd>
+                                </dl>
+                                <dl>
+                                    <dt>限制行业客户 :</dt>
+                                    <dd>广告行业</dd>
+                                </dl>
+                            </div>
+                            <!-- <div class="price-box">
+                            <span class="price">2000/</span>
+                            <span>天</span>
+                        </div> -->
+                        </div>
+                    </dd>
+                    <dd>
+                        <div class="form-check">
+                            <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="defaultCheck1"
+                            />
+                        </div>
+                        <div class="advertising">
+                            <div class="title">深圳市南山区媒体资源</div>
+                            <img src="./../../image/ad.png" />
+                        </div>
+                        <div class="info">
+                            <!-- <div class="cart">
+                            <img src="./../../image/cart.png" />
+                        </div> -->
+                            <!-- <div class="title">
+                            罗湖深南大道广告
+                        </div> -->
+                            <div class="cart">
+                                <img src="./../../image/cart.png" />
+                            </div>
+                            <div class="occupation">
+                                <dl class="retain">
+                                    <dt>媒体容量 :</dt>
+                                    <dd>29990LED屏</dd>
+                                </dl>
+                                <dl>
+                                    <dt>刊例价格 :</dt>
+                                    <dd>东门购物广场</dd>
+                                </dl>
+                                <dl>
+                                    <dt>定金金额 :</dt>
+                                    <dd>办公区、居民区</dd>
+                                </dl>
+                                <dl>
+                                    <dt>可投放广告数量 :</dt>
+                                    <dd>白领、居民</dd>
+                                </dl>
+                                <dl>
+                                    <dt>规格尺寸 :</dt>
+                                    <dd>50000/平</dd>
+                                </dl>
+                                <dl class="retain">
+                                    <dt>所属地区 :</dt>
+                                    <dd>福田区</dd>
+                                </dl>
+                                <dl class="nth-child">
+                                    <dt>具体地址 :</dt>
+                                    <dd>
+                                        北京市朝阳东路地王大厦停车场东门大街32-93号
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="occupation occupation-right">
+                                <dl>
+                                    <dt>商圈信息 :</dt>
+                                    <dd>人流量大，白领居民多</dd>
+                                </dl>
+                                <dl>
+                                    <dt>人群 :</dt>
+                                    <dd>地王大厦、绿源小区</dd>
+                                </dl>
+                                <dl>
+                                    <dt>房价 :</dt>
+                                    <dd>250000</dd>
+                                </dl>
+                                <dl>
+                                    <dt>人流量 :</dt>
+                                    <dd>5990人</dd>
+                                </dl>
+                                <dl>
+                                    <dt>最低投放时长 :</dt>
+                                    <dd>3小时</dd>
+                                </dl>
+                                <dl>
+                                    <dt>限制行业客户 :</dt>
+                                    <dd>广告行业</dd>
+                                </dl>
+                            </div>
+                            <!-- <div class="price-box">
+                            <span class="price">2000/</span>
+                            <span>天</span>
+                        </div> -->
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+            <nav class="paging" aria-label="Page navigation ">
+                <ul class="pagination">
+                    <li>
+                        <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li>
+                        <a href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <nav class="paging" aria-label="Page navigation ">
-            <ul class="pagination">
-                <li>
-                    <a href="#" aria-label="Previous">
-                        <span aria-hidden="true">&laquo;</span>
-                    </a>
-                </li>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li>
-                    <a href="#" aria-label="Next">
-                        <span aria-hidden="true">&raquo;</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </div>
 
-    <div class="footing">
-        版权所有：中国邮政集团
-    </div>
-</body>
-
+        <div class="footing">版权所有：中国邮政集团</div>
+    </body>
 </html>
