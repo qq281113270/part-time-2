@@ -991,12 +991,50 @@ border-radius: 50%;
     margin-left: 20px;
     padding: 0;
 
+
+
+
+
+}
+
+
+
+
+
+.footing {
+    background: white !important;
+    color: red;
+    border-top: 1px #ccc solid;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.footing .button{
+      float: right;
+}
+.footing .button .btn{
+    margin-right: 10px;
+    background: rgb(255, 106, 0);
+    width: 200px;
+}
+.footing .center-w {
+    min-width: 1200px;
+}
+
+.footing .form-check {
+
+    width: 60px;
+    
+    margin-left: 25px;
+    float: left;
+    
 }
 
 @media screen and (max-width: 768px) {
     .full-screen {
         min-width: auto;
     }
+
     .map>dl>dd>.advertising .title {
         /* background: red; */
         height: 22px;

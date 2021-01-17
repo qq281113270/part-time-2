@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        />
+        <title>Document</title>
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./../../css/common/bootstrap.css"
+        />
+        <link
+            href="./../../css/common/bootstrap-select.min.css"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./../../css/common/base.css"
+        />
+        <link rel="stylesheet" type="text/css" href="./index.css" />
+        <script src="./../../js/common/jquery.min.js"></script>
+        <script src="./../../js/common/bootstrap.js"></script>
+        <script src="./../../js/common/bootstrap-select.min.js"></script>
+        <script src="./../../js/common/i18n/defaults-zh_CN.min.js"></script>
+        <script src="./../../js/common/echarts.min.js"></script>
+    </head>
+
+    <body>
+        <div class="Intention-single">
+            <div class="full-screen nav nav-position">
+                <nav class="navbar navbar-default center" role="navigation">
+                    <div class="navbar-header">
+                        <button
+                            type="button"
+                            class="navbar-toggle"
+                            data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1"
+                        >
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <!-- <button class="icon close">Close</button> -->
+
+                        <div class="navbar-brand logo">
+                            <img src="./../../image/logo.gif" />
+                        </div>
+
+                        <div class="navbar-brand">
+                            <div class="log-in">
+                                <ul>
+                                    <li>
+                                        <img src="./../../image/user.png" />
+                                    </li>
+                                    <li class="odd">登录</li>
+                                    <li>|</li>
+                                    <li class="odd">注册</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="collapse navbar-collapse"
+                        id="bs-example-navbar-collapse-1"
+                    >
+                        <!--嵌套下拉菜单-->
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a href="#"> 首页 </a>
+                            </li>
+                            <li><a href="#">我的意向单</a></li>
+                            <li><a href="#">我的收藏</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="center hader-keyword">
+                <ul>
+                    <li class="active">查资源</li>
+                    <li>查行业</li>
+                    <li>查热销</li>
+                    <li>查点击率</li>
+                    <li>查点规格</li>
+                </ul>
+            </div>
+
+            <div class="Intention-single-container">
+                <div class="from-box w">
+                    <div class="row">
+                        <div class="col-md-4 row-h">
+                            <label class="col-md-3">省市选择</label>
+                            <select
+                                class="selectpicker"
+                                multiple
+                                data-live-search="true"
+                                data-selected-text-format="count > 3"
+                            >
+                                <option value="1">广东省</option>
+                                <option value="2">广西省</option>
+                                <option value="3">福建省</option>
+                                <option value="4">湖南省</option>
+                                <option value="5">山东省</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4 row-h">
+                            <label class="col-md-2">市级</label>
+                            <select
+                                class="selectpicker"
+                                multiple
+                                data-live-search="true"
+                                data-selected-text-format="count > 3"
+                            >
+                                <option value="1">广东省</option>
+                                <option value="2">广西省</option>
+                                <option value="3">福建省</option>
+                                <option value="4">湖南省</option>
+                                <option value="5">山东省</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4 row-h">
+                            <label class="col-md-4">资源种类</label>
+                            <select
+                                class="selectpicker"
+                                multiple
+                                data-live-search="true"
+                                data-selected-text-format="count > 3"
+                            >
+                                <option value="1">电视</option>
+                                <option value="2">新闻</option>
+                                <option value="3">互联网</option>
+                              
+                            </select>
+                        </div>
+                        <div class="col-md-4 row-h last-row-h btn-set clear">
+                            <button
+                                id="search-btn"
+                                type="button"
+                                class="fr btn btn-primary"
+                            >
+                                查询
+                            </button>
+                            <button
+                                id="reset-btn"
+                                type="button"
+                                class="fr btn btn-default"
+                            >
+                                重置
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- <div class="row more-condition">
+                    <div class="col-md-4 row-h">
+                        <label class="col-md-4">媒介资源编号</label>
+                        <input type="text" class="form-control1 col-md-8" placeholder="345243645657" >
+                    </div>
+                    <div class="col-md-4  row-h">
+                        <label class="col-md-4">媒介类型</label>
+                        <input type="text" class="form-control1 col-md-8" placeholder="2020/02/20" value="2020/02/20">
+                    </div>
+                    <div class="col-md-4  row-h">
+                        <label class="col-md-4">提交日期</label>
+                        <input type="text" class="form-control1 col-md-8" placeholder="20200920" value="20200920">
+                    </div>
+                </div> -->
+
+                    <!-- <div class="btn-set clear">
+                    <button id="search-btn" type="button" class="fr btn btn-primary">查询</button>
+                    <button id="reset-btn" type="button" class="fr btn btn-default">重置</button>
+                </div> -->
+
+                    <!-- <span class="arrow-down"></span> -->
+                </div>
+
+                <div class="center">
+                    <div class="chart" id="chart"></div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var num = 0;
+
+            $('#search-btn').on('click', function () {});
+
+            $('#reset-btn').on('click', function () {});
+
+            $('.arrow-down').on('click', function () {
+                num++;
+
+                if (num % 2 == 0) {
+                    $('.last-row-h, .more-condition').css('display', 'none');
+                    $(this).removeClass('on');
+                } else {
+                    $('.last-row-h, .more-condition').css('display', 'block');
+                    $(this).addClass('on');
+                }
+            });
+
+            var element = document.getElementById('chart');
+            const myChart = echarts.init(element);
+
+            function transform(data) {
+                var newData = {
+                    xAxisData: [],
+                    seriesData: data,
+                };
+
+                data.forEach((element) => {
+                    newData.xAxisData.push(element.name);
+                });
+                return newData;
+            }
+               
+            var data = [
+        
+                {
+                    name: 'LED',
+                    value: 10,
+                    
+                },
+                {
+                    name: '户外广告',
+                    value: 15,
+                  
+                },
+                {
+                    name: '电视广告',
+                    value: 12,
+                 
+                },
+                {
+                    name: '电梯广告',
+                    value: 19,
+                   
+                },
+                {
+                    name: '手机广告',
+                    value: 18,
+                 
+                },
+            ];
+            data = transform(data);
+            console.log('data=', data);
+
+          
+            var  option = {
+                tooltip: {
+                    trigger: 'item',
+                    axisPointer: {
+                        // 坐标轴指示器，坐标轴触发有效
+                        type: 'shadow', // 默认为直线，可选为：'line' | 'shadow'
+                    },
+                    formatter: function (params) {
+                        console.log('params=', params);
+                        const { name, use, value } = params;
+
+                        return `${params.data.name}<br/>点击率:<span style="color:rgb(245, 77, 99)"> ${params.data.value}%</span>`;
+                    },
+                },
+                animation: true,
+                title: {
+                    text: '点击率查询',
+                    subtext: '点击次数',
+                    left: 'center',
+                },
+                xAxis: {
+                    type: 'category',
+                    boundaryGap: false,
+                    data: data.xAxisData,
+                    //   [
+                    //     'LED',
+                    //     '户外广告',
+                    //     '电视广告',
+                    //     '电梯广告',
+                    //     '手机广告',
+                    // ],
+                },
+                yAxis: {
+                    type: 'value',
+                },
+                series: [
+                    {
+                        data:data.seriesData,
+                        
+                        // [820, 932, 901, 934, 1290],
+                        type: 'line',
+                        symbolSize:7,
+                        borderWidth:7,
+                        areaStyle: {
+                            normal: {
+                                // rbg(24, 144, 255)
+                                color: 'rgb(214, 227, 2535)', //改变区域颜色
+                            },
+                        },
+                        itemStyle: {
+                            normal: {
+                                color: 'rgb(24, 144, 255)', //改变折线点的颜色
+                                lineStyle: {
+                                    color: 'rgb(24, 144, 255)', //改变折线颜色
+                                },
+                            },
+                        },
+                    },
+                ],
+            };
+
+            myChart.setOption(option, true);
+            window.addEventListener('resize', function () {
+                //浏览器大小调整echarts随之改变
+                myChart.resize();
+            });
+            myChart.on('click', function (params) {
+                //地图区域点击时的联动   根据params的值来联动对应数据
+                // console.log('params==', params); //此处写点击事件内容
+                // // index = mapData.findIndex((item) => {
+                // //     return params.name == item.name;
+                // // });
+                // console.log('index=', index);
+                // index
+                // alert(params.name);
+            });
+        </script>
+    </body>
+</html>
