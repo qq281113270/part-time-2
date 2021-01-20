@@ -536,15 +536,3 @@ input[type='checkbox']:active:focus{
     line-height: 30px;
 }
 
-.footer-info{
-    height: 41px;
-    line-height: 41px;
-}
-
-.footer-info ul{
-  
-}
-.footer-info ul li{
-    float: left;
-    color: #666;
-}
